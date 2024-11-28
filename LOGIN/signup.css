@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(211, 241, 211); */
+    
+}
+
+#form{
+    /* height: 75vh; */
+    height: 550px;
+    /* width: 25vw; */
+    width: 350px;
+    /* background-color: wheat; */
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* background-color: rgb(211, 241, 211); */
+    box-shadow: 10px 10px 60px ;
+    border-radius: 10px;
+    /* background-image: url(https://static.vecteezy.com/system/resources/thumbnails/013/645/801/small_2x/green-texture-abstract-background-free-vector.jpg); */
+    
+}
+#logo{
+    height: 100px;
+    width: auto;
+    margin-top: 15px;
+}
+
+#cityMark{
+    font-size: 20px;  
+    font-family: poppins;
+    color: rgb(86, 84, 84);
+}
+#phoneMark{
+    font-size: 20px;  
+    font-family: poppins;
+    color: rgb(86, 84, 84);
+}
+#userMark{
+    font-size: 20px;  
+    font-family: poppins;
+    color: rgb(86, 84, 84);
+}
+
+#emailMark{
+    font-size: 20px;
+    font-family: poppins;
+    color: rgb(86, 84, 84);
+
+}
+#name{
+    margin-top: 40px;
+    width: 260px;
+    height: 35px;
+    border-radius: 12px;
+    padding: 7px;
+    font-size: 15px;
+    /* background-color: rgb(186, 242, 186); */
+    font-family: poppins;
+}
+#email , #city , #phone{
+    /* background-color: rgb(186, 242, 186); */
+    margin-top: 30px;
+    width: 260px;
+    height: 35px;
+    border-radius: 12px;
+    padding: 7px;
+    font-size: 15px;
+    font-family: poppins;
+
+}
+
+#signup{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+    padding: 4px 15px;
+    width: 260px;
+    border-radius: 17px;
+    font-family: poppins;
+    font-weight: 600;
+    /* background-color:rgb(48, 240, 48); */
+    letter-spacing: 1px;
+}
+#signup:hover{
+    cursor: pointer;
+    background-color:rgb(48, 240, 48);
+    color: black;
+    
+}
+h1{
+    font-size: 14px;
+    font-family: poppins;
+    margin-top: 17px;
+    margin-left: 23px;
+    /* text-align: center; */
+    color: red;
+}
+
+h3{
+    margin-top: 20px;
+    text-align: center;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#login{
+    text-decoration: none;
+    font-family: poppins;
+    color: rgb(22, 79, 24);
+    font-size: 15px;
+    
+}

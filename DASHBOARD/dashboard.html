@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dashboard - Smart Waste Management</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="dashboard.css">
+ 
+</head>
+<body>
+  <header>
+    <div class="container">
+      
+      <h1 class="animation" >Dashboard</h1>
+      <nav>
+        <a class="animation" href="../index.html">Profile</a>
+        <a class="animation" href="../REWARD/reward.html">Rewards</a>
+        <a class="animation" href="../CONTACT US/contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="overview">
+      <h2>Why Recycling Matters</h2>
+      
+      
+      <div class="impact">
+        <h3>Environmental Impact</h3>
+        <p>By recycling, you help:</p>
+        <ul>
+          <li><strong>Reduce Greenhouse Gas Emissions:</strong> Recycling reduces the need for new raw materials, which decreases emissions from manufacturing processes.</li>
+          <li><strong>Save Energy:</strong> Recycling uses less energy compared to producing products from virgin materials, leading to lower energy consumption.</li>
+          <li><strong>Conserve Natural Resources:</strong> Recycling helps conserve valuable natural resources such as metals, minerals, and trees.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="schedule-pickup">
+      <h2 id="schedule-header">Schedule Pickup</h2>
+      <p id="total-scheduled">Total Scheduled Pickups: 0</p>
+      <form id="schedule-pickup-form">
+        <label for="pickup-date">Pickup Date:</label>
+        <input type="date" id="pickup-date" >
+        
+        <label for="waste-type">Waste Type:</label>
+        <select id="waste-type" >
+          
+          <option value="recyclable">Recyclable</option>
+          <option value="non-recyclable">Non-Recyclable</option>
+        </select>
+
+        <label for="product-type">Product Type:</label>
+        
+        <select id="product-type" >
+          <option value="clothes">Clothes</option>
+          <option value="plastic">Plastic Waste</option>
+          <option value="toys">Broken Toys</option>
+          <option value="reusable">Reusable Items</option>
+          <option value="electronics-working">Electronics (Working)</option>
+          <option value="electronics-not-working">Electronics (Not Working)</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" >
+
+        <button type="submit">Schedule Pickup</button>
+      </form>
+      <div class="schedule-details" id="schedule-details">
+        <h3>Scheduled Pickups</h3>
+        <ul id="scheduled-pickup-list">
+          <!-- Scheduled pickups will be listed here -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
