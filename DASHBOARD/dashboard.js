@@ -4,14 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
     
     form.addEventListener('submit', (event) => {
         event.preventDefault(); 
-
-        const pickupDate = document.getElementById('pickup-date').value;
-        const wasteType = document.getElementById('waste-type').value;
-        const productType = document.getElementById('product-type').value;
-        const location = document.getElementById('location').value;
-        alert(`Pickup successfully scheduled!\nPickup Date: ${pickupDate}\nWaste Type: ${wasteType}\nProduct: ${productType}\nLocation: ${location}`);
+        sendMail();
+        function sendMail(){
+            let params = {
+                 pickupDate : document.getElementById('pickup-date').value,
+                 wasteType : document.getElementById('waste-type').value,
+                 location : document.getElementById('location').value,
+                 product : document.getElementById("product-type").value
+            }
+            emailjs.send("service_vwuxcsu", "template_p9xha0f", params).then(alert("Waste Pickup Booked Successfully"))
+        }
+    
     });
 });
+
+
 
 gsap.from(".animation", {
     y : -25,
